@@ -53,6 +53,8 @@ describe('实现一个基类，可以继承，可以监听事件', function () {
       var myclass = new MyClass
       assert.equal(myclass.getVal(), 'hello world')
       assert.equal(MyClass.say('haha'), 'haha')
+      assert.equal(myclass instanceof MyClass, true)
+      assert.equal(myclass instanceof Base, true)
     })
 
     it('可以extend多次', function () {
@@ -64,6 +66,10 @@ describe('实现一个基类，可以继承，可以监听事件', function () {
       var B = A.extend()
       var b = new B
       assert.equal(b.say('hello world'), 'hello world')
+      assert.equal(b instanceof View, false)
+      assert.equal(b instanceof B, true)
+      assert.equal(b instanceof A, true)
+      assert.equal(b instanceof Base, true)
     })
 
     it('能够监听事件', function (done) {

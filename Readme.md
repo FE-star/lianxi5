@@ -18,7 +18,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
 function Cat() {}
 Cat.prototype = new Animal
 // 添加一个属性
-Cat.prootypte.name = 'cat'
+Cat.prototype.name = 'cat'
 ```
 
 * 构造继承

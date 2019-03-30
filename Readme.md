@@ -8,6 +8,8 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes
 
 ### ES5
 
++ https://github.com/paopaomo/study-plan/wiki/inheritance
+
 以前没有类型，所以大家模拟了很多继承的方法，但本质上都是两种的变体：
 
 * 原型链继承
